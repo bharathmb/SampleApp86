@@ -8,30 +8,14 @@ $(document).ready(function(){
 	$('#oem_results').hide();
 	
 	var model_persist = "";
-	//on-input function to display data split message
-	$("#data-split").on("input", function() {
-		var train_split = $("#data-split").val();
-		var test_split = 100 - train_split;
-		$(".split_msg_out").html("")
-		$(".split_msg_out").append("Your data will be split in the ratio " + train_split +"% training & "+test_split+ "% test");
-	});
-	
-	//$( "#data-split" ).on("keydown", function( event ) {
-	//	$(".split_msg_out").html("");
-	//});
-	
-	$("#data-split").keyup(function(event) {
-		if(event.keyCode == 8)
-		{
-			$(".split_msg_out").html("");
-		}
-	});
   
 $("#show_perf").on("click", function(){
     
 	//alert("inside Ensemble Model....");
 	
 	    $("#show_perf").attr("disabled", "disabled");  
+		
+		$('#model_opt').hide();
 		
 		$('#building_inter').show();
 	  
