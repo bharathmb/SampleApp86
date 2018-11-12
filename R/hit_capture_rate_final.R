@@ -92,10 +92,3 @@ plot_ly(hit.df, y = ~Hits, x = ~Threshold,name='Hit Rate',type='scatter',mode='l
 
 
 }
-
-################# Calling the function
-
-########### Input to the function('a') should be a dataframe with the first column as the Probabilities and second column as 'DV'. 
-
-
-hitvcap(a)
